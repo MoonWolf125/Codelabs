@@ -27,28 +27,66 @@
                   environment="web"
                   feedback-link="https://github.com/MoonWolf125/Codelabs">
     
-      <google-codelab-step label="Overview" duration="1">
-        <h2 class="checklist" is-upgraded>What You&#39;ll Learn</h2>
+      <google-codelab-step label="Welcome" duration="5">
+        <p>This codelab is part of the Android in Kotlin series! This series covers the most common features, implementations, and best practices of Android using the Kotlin programming language. The codelabs in this series are listed on the <a href="../Android-Kotlin-Series-Welcome/index.html?index=..%2F..index" target="_blank">Android in Kotlin series welcome page</a>.</p>
+<h2 is-upgraded>Introduction</h2>
+<p>Welcome to the Android in Kotlin lesson on Bottom Navigation!</p>
+<p>Bottom Navigation is one of the most common implementations that allows users to move between primary destinations. The <code>BottomNavigationView</code> displays a single bar at the bottom of the screen that displays three to five destinations.</p>
+<p>For each destination there is a corresponding icon and optional text that are displayed together in the <code>BottomNavigationView</code>. When a destination&#39;s icon is selected the user is navigated to that destination. It is recommended that a destination <strong>always</strong> have an icon, display a label; should space allow, and that labels be short and meaningful while avoiding any text wrapping.</p>
+<p>These icons and labels can be in one of two states, selected and unselected. When an item is selected it&#39;s said to be &#34;active,&#34; corresponding to the actively displayed destination whereas an unselected item is said to be &#34;inactive.&#34; Active items are highlighted to distinguish that they are the selected item and the corresponding destination is shown. Inactive items are semi-opaque to distinguish themselves from the active item.</p>
+<p>Bottom Navigation is preferred because of it&#39;s proximity to the user&#39;s thumb, consistency between selectable destinations, and clear icons and labels.</p>
+<aside class="special"><p><strong>Note:</strong></p>
+    <ul>
+        <li>Bottom Navigation should be utilized for destinations that need to be accessible from anywhere in the app, when there are three to five destinations, and only on mobile platforms.</li>
+    </ul>
+</aside>
+<aside class="warning"><p><strong>Note:</strong></p>
+    <ul>
+        <li>Bottom Navigation should <strong>not</strong> be used utilized when there are less than three destinations or more than five. When there are less than three destinations, use tabs instead. When there are more than five destinations, use scrolling tabs or a Navigation Drawer.</li>
+        <li>Only <strong>one</strong> item should be active at a time since only one destination should be shown on a screen at a time.</li>
+    </ul>
+</aside>
+<h2 is-upgraded>What you should know</h2>
+<ul>
+<li>The Kotlin programming language</li>
+<li>How to use Android Studio</li>
+</ul>
+<h2 class="checklist" is-upgraded>What you&#39;ll learn</h2>
 <ul class="checklist">
 <li>How to create a menu for Navigation</li>
-<li>How to add a Bottom Navigation View</li>
-<li>How to add a Navigation Item Selected Listener</li>
-<li>Navigate to the Home Fragment using the Listener</li>
+<li>How to add a <code>BottomNavigationView</code></li>
+<li>How to set an <code>OnNavigationItemSelectedListener</code></li>
+<li>How to navigate to the Home Fragment using the Listener</li>
 </ul>
 
 
       </google-codelab-step>
     
-      <google-codelab-step label="Getting Started" duration="5">
-        <h2 is-upgraded>Get the Code</h2>
+      <google-codelab-step label="Getting Started" duration="8">
+        <h2 is-upgraded>What you&#39;ll need</h2>
+<ul>
+<li><a href="https://developer.android.com/studio" target="_blank">Android Studio</a></li>
+<li>A Virtual or Physical Device (connected via USB)</li>
+</ul>
+<h2 is-upgraded>Get the Code</h2>
 <p>Clone the navigation codelab from GitHub:</p>
-<pre>$ git clone https://github.com/MoonWolf125/Android-Kotlin-Bottom-Navigation.git
+<pre>git clone https://github.com/MoonWolf125/Android-Kotlin-Bottom-Navigation.git
 </pre>
 <p>Alternatively you can download the repository as a Zip file:</p>
-<p><a href="https://github.com/MoonWolf125/Android-Kotlin-Bottom-Navigation/archive/0c8042c55a2702ae00b04a23477db1ec315c13a2.zip" target="_blank">
-  <paper-button class="colored" raised="">Download Zip</paper-button>
-</a></p>
+          <p><a href="https://github.com/MoonWolf125/Android-Kotlin-Bottom-Navigation/archive/0c8042c55a2702ae00b04a23477db1ec315c13a2.zip" target="_blank"><paper-button class="colored" raised="">Download Zip</paper-button></a></p>
+<h3 class="faq" is-upgraded>Frequently Asked Questions</h3>
+<ul class="faq">
+<li><a href="https://developer.android.com/studio/" target="_blank">How do I install Android Studio?</a></li>
+<li><a href="https://developer.android.com/studio/run/managing-avds" target="_blank">How do I create a Virtual Device?</a></li>
+<li><a href="http://developer.android.com/tools/device.html" target="_blank">How do I set up a device for development?</a></li>
+<li><a href="../Android-Studio-Version-Control-Basics/index.html?index=..%2F..index" target="_blank">How do I use Android Studio&#39;s Version Control Integration?</a></li>
+</ul>
 
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Code Overview" duration="2">
+        
 
       </google-codelab-step>
     
